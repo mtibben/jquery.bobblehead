@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="../transformJS.js"></script>
+  <script type="text/javascript" src="../jquery.bobble.js"></script>
+
+
+  <style>
+  /* bobble img needs to be placed relative */
+  .bobble { position:relative; }
+	</style>
+</head>
+
+<body>
+
+  <div style="float:left;
+              background-image: url('bobblebody1.jpg');
+              background-position: center bottom;
+              background-repeat: no-repeat;
+              height: 460px;
+              width: 300px;">
+    <img src="face.png" class="bobble" style="margin-left:80px">
+  </div>
+
+
+<script>
+      $(".bobble").bobble();
+</script>
+</body>
+</html>
